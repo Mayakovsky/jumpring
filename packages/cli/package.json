@@ -1,0 +1,21 @@
+{
+  "name": "jumpring",
+  "version": "0.1.0",
+  "description": "jumpring — a small CLI for encrypted key custody and EVM chain operations.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "jumpring": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@jumpring/core": "workspace:*",
+    "@jumpring/evm": "workspace:*",
+    "commander": "^15.0.0"
+  }
+}

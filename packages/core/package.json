@@ -1,0 +1,25 @@
+{
+  "name": "@jumpring/core",
+  "version": "0.1.0",
+  "description": "Encrypted keystore, Argon2id KDF, AES-256-GCM, and EFF diceware — the chain-agnostic core of the jumpring toolkit.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "argon2": "^0.44.0"
+  }
+}

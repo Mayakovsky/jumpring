@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@jumpring/core": ["./packages/core/src/index.ts"],
+      "@jumpring/evm": ["./packages/evm/src/index.ts"]
+    }
+  },
+  "include": [
+    "packages/core/src",
+    "packages/core/test",
+    "packages/evm/src",
+    "packages/evm/test",
+    "packages/cli/src",
+    "packages/cli/test"
+  ]
+}

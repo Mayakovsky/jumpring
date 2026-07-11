@@ -1,0 +1,26 @@
+{
+  "name": "jumpring-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.5.2",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.test.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "build": "tsc -b"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@jumpring/core": "workspace:*",
+    "@jumpring/evm": "workspace:*",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "vitest": "^2.1.8"
+  }
+}

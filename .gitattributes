@@ -1,0 +1,5 @@
+# Canonical line endings are LF on every platform. This keeps the pinned EFF
+# wordlist digest (and all text files) byte-identical across checkouts and CI
+# runners — a CRLF checkout on Windows would otherwise change the wordlist bytes
+# and fail its integrity digest.
+* text=auto eol=lf

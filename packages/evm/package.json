@@ -1,0 +1,25 @@
+{
+  "name": "@jumpring/evm",
+  "version": "0.1.0",
+  "description": "EVM signing and RPC for the jumpring toolkit — a thin viem delegation over jumpring keystores.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@jumpring/core": "workspace:*",
+    "viem": "^2.53.1"
+  }
+}
